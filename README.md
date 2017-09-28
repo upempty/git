@@ -7,9 +7,9 @@ git practise
 
 "Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/f1cheng/git.git
- * [new branch]      HEAD -> b1
+  [new branch]      HEAD -> b1
 git branch -a
-* b1
+  b1
   master
   remotes/origin/HEAD -> origin/master
   remotes/origin/b1
@@ -20,3 +20,13 @@ git branch -a
 切换到分支 'master'
 您的分支与上游分支 'origin/master' 一致。
 "
+6. make changes
+7. git add .
+8. git commit -m 'add 2'
+9. git push origin HEAD
+10. git checkout b1
+11. git rebase origin/master
+"there is conflict and merge flags in files. vi one by one, manually to change them".
+12. git rebase --continue
+13. git add .
+14. 
