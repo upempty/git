@@ -40,4 +40,4 @@ git branch -a
 
 git add .
 git commit --amend
-git push origin master:HEAD
+git push origin master:HEAD---will reject),then git push without param.(git push)
