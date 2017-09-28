@@ -41,4 +41,3 @@ git branch -a
 git add .
 git commit --amend
 git push origin master:HEAD
-
