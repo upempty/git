@@ -1,4 +1,3 @@
-# git summary   
 ## git rebase master  
 git checkout master  
 git pull  
@@ -39,3 +38,4 @@ error: 无法推送一些引用到 'https://github.com/yourname/git.git'
 提示：'git push --help' 中的 'Note about fast-forwards' 小节.  
 ```  
 git push -f origin master  
+
