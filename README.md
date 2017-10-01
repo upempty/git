@@ -1,5 +1,5 @@
 # git  
-## git practisea  
+## git rebase  
 1. git checkout -b b1  
 2. git add .  
 3. git commit -m 'Add init readme'  
