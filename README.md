@@ -54,7 +54,7 @@ git add .
 git commit --amend -m $'a&b&c'  
 git push origin master  
 ```  
-Username for 'https://github.com': f1cheng  
+Username for 'https://github.com': yourname  
 Password for 'https://yourname@github.com':  
 To https://github.com/yourname/git.git  
  ! [rejected]        master -> master (non-fast-forward)  
