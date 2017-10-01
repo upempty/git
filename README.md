@@ -48,17 +48,17 @@ git checkout master
 git merge b1  
 git push origin master(git push origin HEAD:master)  
 
-##amend not allow directly push to remote, but by force!!!:)
+##amend not allow directly push to remote, but by force !!!:)  
 vi README.md   
 git add .  
 git commit --amend -m $'a&b&c'  
 git push origin master  
 ```  
 Username for 'https://github.com': f1cheng  
-Password for 'https://f1cheng@github.com':  
-To https://github.com/f1cheng/git.git  
+Password for 'https://yourname@github.com':  
+To https://github.com/yourname/git.git  
  ! [rejected]        master -> master (non-fast-forward)  
-error: 无法推送一些引用到 'https://github.com/f1cheng/git.git'  
+error: 无法推送一些引用到 'https://github.com/yourname/git.git'  
 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。  
 提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见  
 提示：'git push --help' 中的 'Note about fast-forwards' 小节.  
