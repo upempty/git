@@ -9,15 +9,15 @@ git add .
 git commit --amend -m $'a&b&a'  
 git log --oneline --all --decorate  
 ```  
-git rebase master  
+git rebase origin/master  
 ```  
 To resolve conflict issue  
 vi README.md  
 ```  
 git add .  
 git rebase --continue  
-git checkout master  
-git merge b1  
+----git checkout master  
+----git merge b1  
 git push origin master(git push origin HEAD:master)  
 
 ## amend not allow directly push to remote, but by force !!!:)  
