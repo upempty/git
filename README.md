@@ -1,5 +1,5 @@
 # git summary   
-## git rebase master&git merge branch  
+## git rebase master  
 git checkout master  
 git pull  
 git checkout b1(git checkout -b user/f1cheng/wo)    
