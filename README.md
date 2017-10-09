@@ -1,26 +1,69 @@
 ## git rebase master  
 git checkout master  
 git pull  
-git checkout b1(git checkout -b user/f1cheng/wo)    
+### first modify  
 ```  
+git checkout b1(git checkout -b user/f1cheng/wo)    
 vi README.md  
 git add .  
-git commit -m $'a&b&a1'  
-vi README.md  
-git add .  
-git commit --amend -m $'a&b&a'  
+git commit -m $'final1'  
 git log --oneline --all --decorate  
 ```  
-git rebase origin/master  
+### first review
 ```  
-To resolve conflict issue  
+--if need rebase  
+  git rebase origin/master  
+  --To resolve conflict issue  
+    vi README.md  
+    git add .  
+    git rebase --continue  
+-------git checkout master(no)  
+-------git merge b1(no)  
+git push origin HEAD:master(git push origin HEAD:refs/for/master for review)  
+  
+--return to master  
+  git checkout master  
+  git pull origin master  
+
+```  
+### second changes for review  
+```  
+git checkout b1  
+git pull origin b1  
 vi README.md  
-```  
 git add .  
-git rebase --continue  
-----git checkout master  
-----git merge b1  
-git push origin master(git push origin HEAD:master)  
+git commit --amend -m $'final1-2'  
+
+if based master changed: git rebase origin/master  
+--To resolve conflict issue  
+  vi README.md  
+  git add .  
+  git rebase --continue  
+git push origin HEAD:master(git push origin HEAD:refs/for/master for review)  
+  
+--return to master  
+git checkout master  
+git pull origin master  
+```  
+### e.g:  
+```  
+Author: Cheng Fei <cheng.fei1026@gamil.com>---------review2
+Date:   Sun Oct 1 20:33:57 2017 +0800
+
+    1009--final1-2
+----------------------------------------------------if master changed, then one more master orinal log here!
+commit 62b2e83525189e8d0b24f042b4521777d835ba51-----review1
+Author: Cheng Fei <cheng.fei1026@gamil.com>
+Date:   Sun Oct 1 20:33:57 2017 +0800
+
+    1009--final1
+
+commit 14decb6d123b237970113523c3d0d9544cd75911----master original
+Author: Cheng Fei <cheng.fei1026@gmail.com>
+Date:   Mon Oct 9 22:37:52 2017 +0800
+
+    Update README.md
+```  
 
 ## amend not allow directly push to remote, but by force !!!:)  
 vi README.md  
@@ -39,3 +82,4 @@ error: 无法推送一些引用到 'https://github.com/yourname/git.git'
 ```  
 git push -f origin master  
 rebase again and again, review  
+  
