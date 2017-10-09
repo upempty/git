@@ -2,8 +2,11 @@
 ## git rebase master&git merge branch  
 git checkout master  
 git pull  
-git checkout b1  
+git checkout b1(git checkout -b user/f1cheng/wmp)    
 ```  
+vi README.md  
+git add .  
+git commit -m $'a&b&a1'  
 vi README.md  
 git add .  
 git commit --amend -m $'a&b&a'  
