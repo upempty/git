@@ -2,7 +2,7 @@
 ## git rebase master&git merge branch  
 git checkout master  
 git pull  
-git checkout b1(git checkout -b user/f1cheng/wmp)    
+git checkout b1(git checkout -b user/f1cheng/wo)    
 ```  
 vi README.md  
 git add .  
