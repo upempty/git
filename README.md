@@ -7,7 +7,7 @@ git pull
 ### first modify  
 ```  
 git checkout b1(git checkout -b user/f1cheng/wo)    
-vi README.md  
+vi README.mxd jjdshh 
 git add .  
 git commit -m $'final1'  
 git log --oneline --all --decorate  
@@ -29,7 +29,7 @@ git push origin HEAD:master(git push origin HEAD:refs/for/master for review)
   git pull origin master  
 
 ```  
-### second changes for review  
+### second 112333changes for review  
 ```  
 git checkout b1  
 git pull origin b1  
