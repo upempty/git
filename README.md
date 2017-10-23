@@ -1,3 +1,6 @@
+
+Test for git revert  
+
 ## git rebase master  
 git checkout master  
 git pull  
