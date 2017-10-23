@@ -1,4 +1,4 @@
-## git revert  
+## git revert(undo commitid's changes, kept all others including before and after)  
 git checkout master  
 git fetch  
 git reset --hard origin/master  
