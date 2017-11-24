@@ -51,7 +51,7 @@ git pull origin b1
 vi README.md  
 git add .  
 git commit --amend -m $'final1-2'  
-<
+<git rebase ...
 opt1:
 git fetch
 git rebase origin/master-----from remote
