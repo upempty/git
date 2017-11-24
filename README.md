@@ -51,7 +51,16 @@ git pull origin b1
 vi README.md  
 git add .  
 git commit --amend -m $'final1-2'  
-
+<
+opt1:
+git fetch
+git rebase origin/master-----from remote
+opt2:
+git checkout master
+git pull
+git checkout b1
+git rebase master------------from local repo
+>
 if based master changed: git rebase origin/master  
 --To resolve conflict issue  
   vi README.md  
