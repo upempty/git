@@ -4,7 +4,7 @@ git fetch
 git reset --hard origin/master  
 git pull  
 
-git checkout -b user/f1cheng/rr  
+git checkout -b user/f1cheng/rr(git branch -D user/f1cheng/rr for deletet branch)  
 git revert commitid  
 ```  
 if conflict: 
