@@ -1,3 +1,9 @@
+## git 
+```
+==init version
+git rev-list --reverse HEAD
+git log --pretty=oneline --reverse | head -1
+```
 ## git revert(undo commitid's changes, kept all others including before and after)  
 git checkout master  
 git fetch  
