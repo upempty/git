@@ -99,6 +99,7 @@ Date:   Mon Oct 9 22:37:52 2017 +0800
 ```  
 
 ## amend not allow directly push to remote, but by force !!!:)  
+### recheck
 vi README.md  
 git add .  
 git commit --amend -m $'a&b&c'  
